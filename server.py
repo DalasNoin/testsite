@@ -17,7 +17,7 @@ def handle_client(client_socket):
 		print "[*] Received: %s" % request
 		client_socket.send("ACK!")
 		
-    client_socket.close()
+	client_socket.close()
     
 while True:
     client,addr = server.accept()
